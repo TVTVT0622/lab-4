@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>author</title>
+</head>
+<body>
+	{% extends "authorbase.html" %}
+ 		{% block content %}
+			{%for author in authors%}
+			<div>
+				<h3>{{author.name}}</h3>
+				<p>age:{{author.age}}</br>
+				{%for book in author.book_set.all%}
+				book: {{book.title}}</br>
+				{%endfor%}</p>
+			</div>
+			{%endfor%}
+		{% endblock %}
+</body>
+</html>

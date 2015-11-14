@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>book</title>
+</head>
+<body>
+	{% extends "bookbase.html" %}
+ 		{% block content %}
+			{%for book in books%}
+			<div>
+				<h3>{{ book.title }}</h3>
+				<p>Autor: {{book.authorid.name}}
+			</div></br>
+			{%endfor%}</p>
+		{% endblock %}
+</body>
+</html>
+

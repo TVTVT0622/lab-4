@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>{{title}}</title>
+
+	<style type="text/css">
+	body {background-color: skyblue}
+	h1 {border-style: solid;
+  		border-color: black;
+  		margin-left: 400px;
+		margin-right:400px;
+		margin-top:100px;
+	}
+  		
+	h2 {border-style: solid;
+		color:green;
+		margin-left:300px;
+		margin-right:300px;
+		}
+</style>
+</head>
+<body>
+	<h1>Hello User</h1>
+</body><h2>
+<form   action="/search/" method="get">请输入你要查询的作者: <input type="author" name="author_name" /><br />
+<input type="submit"><br />
+</form>
+<form   action="/show_book/" method="get">
+	点击查询全部图书
+<input type="submit">
+</form>
+<form   action="/show_author/" method="get">
+点击查询全部作者 <input type="submit">
+</form></h2>
+</html>

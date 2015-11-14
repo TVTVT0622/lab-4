@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>book</title>
+</head>
+<body>
+	
+	{%for book in books%}
+	<div>
+		
+		<li>书名：{{ book.title }}  作者：{{book.authorid.name}}<form action = "/detail/" method = "gets"> <button type = "submit" value= {{book.isbn}} name = "isbn">详情</button></form>
+		<form action = "/delete/" method = "gets">
+		<button type = "submit" value= {{book.isbn}} name = "isbn" onclick = "dele()">点击删除</button></form></li>
+	</div>
+	{%endfor%}
+</body>
+</html>
